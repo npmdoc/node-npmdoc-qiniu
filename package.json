@@ -1,1 +1,39 @@
-{     "devDependencies": {         "qiniu": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-qiniu",     "homepage": "https://github.com/npmdoc/node-npmdoc-qiniu",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-qiniu.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [qiniu (v6.1.13)](https://github.com/qiniu/nodejs-sdk) [![npm package](https://img.shields.io/npm/v/npmdoc-qiniu.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-qiniu) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-qiniu.svg)](https://travis-ci.org/npmdoc/node-npmdoc-qiniu)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "qiniu": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-qiniu",
+    "keywords": [
+        "documentation",
+        "qiniu"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_qiniu.js",
+    "name": "npmdoc-qiniu",
+    "nameAlias": "npmdoc_qiniu",
+    "nameOriginal": "npmdoc-qiniu",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-qiniu.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
