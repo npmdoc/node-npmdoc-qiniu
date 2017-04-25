@@ -1,4 +1,7 @@
-# api documentation for  [qiniu (v6.1.13)](https://github.com/qiniu/nodejs-sdk)  [![npm package](https://img.shields.io/npm/v/npmdoc-qiniu.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-qiniu) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-qiniu.svg)](https://travis-ci.org/npmdoc/node-npmdoc-qiniu)
+# npmdoc-qiniu
+
+#### basic api documentation for  [qiniu (v6.1.13)](https://github.com/qiniu/nodejs-sdk)  [![npm package](https://img.shields.io/npm/v/npmdoc-qiniu.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-qiniu) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-qiniu.svg)](https://travis-ci.org/npmdoc/node-npmdoc-qiniu)
+
 #### Node wrapper for Qiniu Resource (Cloud) Storage API
 
 [![NPM](https://nodei.co/npm/qiniu.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/qiniu)
@@ -88,7 +91,8 @@
     "scripts": {
         "test": "make test"
     },
-    "version": "6.1.13"
+    "version": "6.1.13",
+    "bin": {}
 }
 ```
 
